@@ -35,7 +35,7 @@ if [ $(uname) == "Linux" ]; then
     sed -i "s/plugins=(git)/plugins=(git z extract sudo command-not-found safe-paste tmux history zsh-syntax-highlighting zsh-autosuggestions)/g" $HOME/.zshrc || \
     exit 2
 elif [ $(uname) == "Darwin" ]; then
-    sed -i "" "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"agnoster\"/g" $HOME/.zshrc && \
+    sed -i "" "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"bira\"/g" $HOME/.zshrc && \
     sed -i "" "s/# DISABLE_MAGIC_FUNCTIONS=\"true\"/DISABLE_MAGIC_FUNCTIONS=\"true\"/g" $HOME/.zshrc && \
     sed -i "" "s/plugins=(git)/plugins=(git z extract sudo command-not-found safe-paste tmux history zsh-syntax-highlighting zsh-autosuggestions)/g" $HOME/.zshrc || \
     exit 2
